@@ -1,0 +1,31 @@
+"""Main-method paths and hyperparameters."""
+from pathlib import Path
+
+MODEL_PATHS = {
+    "qwen7": "Qwen/Qwen2.5-7B-Instruct",
+    "llama8": "meta-llama/Llama-3.1-8B-Instruct",
+}
+SEED = 42
+FEATURE_MODE = "normalized"
+USE_CLASS_WEIGHTS = True
+BATCH_SIZE = 32
+MAX_SUCCESSFUL_EPOCHS = 4
+LR = 1e-4
+MIN_LR = 1e-6
+WEIGHT_DECAY = 1e-3
+DROPOUT = 0.1
+MODEL_DIM = 128
+NUM_LAYERS = 4
+NHEAD = 4
+MAX_SEQ_LEN = 2000
+LABEL_SMOOTHING = 0.1
+GRAD_CLIP_NORM = 1.0
+VAL_RATIO = 0.10
+BASE_SPIKE_MARGIN = 0.02
+RELAX_STEP = 0.005
+MAX_SPIKE_MARGIN = 0.04
+MAX_RETRIES = 12
+EXCLUDED_LABELS = set()
+MAX_TOKEN_LENGTH = 1024
+MAX_SURPRISAL = 20.0
+EPSILON = 1e-6
